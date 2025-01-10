@@ -1,0 +1,515 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+
+}
+
+body{
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 100px;
+    transition: 0.5s ease;
+    margin-top: -10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+
+  }
+  header.scrolled{
+    background: #fff;
+
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+  }
+
+  .logo img {
+    width: 100px; /* Adjust the width to your desired size */
+
+  }
+
+  /* header .brand{
+    color: #D95F18;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  } */
+
+  header .navigation{
+    position: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+
+  header .navigation .navigation-items a{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+  }
+
+  header #extreme {
+    color:#f15b04;
+  }
+
+  header .navigation .navigation-items a:hover::before{
+  width: 100%;
+  }
+
+  section{
+    padding: 100px 200px;
+  }
+
+  .home{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(108, 146, 212, 0.3);
+  }
+  .home:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(108, 146, 212, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  }
+  .home .content{
+    z-index: 888;
+    color: #fffcfc;
+    width: 70%;
+    margin-top: 50px;
+    display: none;
+  }
+  .home .content.active{
+    display:block;
+  }
+  .home .content h1{
+    font-size: 4em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:rgb(8, 8, 8);
+
+  }
+
+  .home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #D95F18
+
+  }
+  .home .content p{
+    margin-bottom: 65px;
+
+
+  }
+
+  .home .content a{
+    background: #065e14;
+    padding: 15px 35px;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .home .content a:hover{
+    background: #f15b04;
+    padding: 15px 35px;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .home .media-icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition:  0.5s ease;
+  }
+
+  .home .media-icons a{
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+  }
+  .home .media-icons a:hover{
+    color: #D95F18;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+    }
+
+  .home .media-icons a:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  .home .media-icons a:hover{
+    transform: scale(1.3);
+  }
+  .home video{
+    z-index: 000;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider-navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+  }
+  .slider-navigation .nav-btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255,255,255,0.5);
+    transition: 0.3s ease;
+  }
+  .slider-navigation .nav-btn.active{
+    background: #f15b04;
+  }
+  .slider-navigation .nav-btn:not(:last-child){
+    margin-right: 20px;
+  }
+  .slider-navigation .nav-btn:hover{
+    transform: scale(1.2);
+  }
+  .video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+  }
+  .video-slide.active{
+    clip-path: circle(150.0% at 0 50%);
+    transition:  2s ease;
+    transition-property: clip-path;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media (max-width: 1040px) {
+    header {
+      padding: 12px 20px;
+    }
+
+    section {
+      padding: 100px 20px;
+    }
+
+    .home .media-icons {
+      right: 15px;
+    }
+
+    header .navigation {
+      display: none;
+    }
+
+    header .navigation.active {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(1, 1, 1, 0.5);
+    }
+
+    header .navigation .navigation-items a {
+      color: #222;
+      font-size: 1.2em;
+      margin: 20px;
+    }
+
+    header .navigation .navigation-items a:before {
+      background: #222;
+      height: 5px;
+    }
+
+    header .navigation.active .navigation-items {
+      background: #fff;
+      width: 600px;
+      max-width: 600px;
+      margin: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 5px 25px rgb(1, 1, 1, 0.2);
+    }
+
+    .menu-btn {
+      background: url(icon.svg) no-repeat;
+      background-size: 30px;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .menu-btn.active {
+      z-index: 999;
+      background: url(close.png) no-repeat;
+      background-size: 25px;
+      background-position: center;
+      transition: 0.3s ease;
+    }
+
+    /* Dropdown styles for responsiveness */
+    .dropdown-content {
+      position: static;
+      display: none;
+      background-color: #f9f9f9;
+      box-shadow: none;
+      width: auto;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .logo {
+      flex: 1;
+      justify-content: flex-start;
+  }
+  }
+
+
+/*----------------------------------------------------------------END OF NAVBAR*/
+
+.text-change{
+scroll-snap-type: y mandatory;
+overflow-y: scroll;
+}
+
+#content{
+position: fixed;
+width: 100%;
+top: 40%;
+color: #fff;
+text-align: center;
+scroll-snap-align: start;
+}
+
+.txt{
+font-size: 100px;
+font-family: 'Georgiano';
+}
+
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.sec{
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+.txt{
+  font-size: 135px;
+  font-family: 'Georgiano';
+  color: #fefefe;
+  border-bottom: 1.7px solid #fefefe;
+  padding-top: 25px;
+  border-top: 1.7px solid #fefefe;
+  margin-bottom: 40px;
+}
+
+@keyframes transitionLeft{
+  from{
+      opacity: 0;
+      transform: translateX(-220px);
+  }
+  to{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+.section-1{
+    background-image: url(Img/Balay_Sa_Agta_1.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: section-1 15s infinite ease-in-out;
+}
+
+@keyframes section-1 {
+  0%{
+      background-image: url(Img/Balay_Sa_Agta_3.png) ;
+    
+    }
+    50%{
+      background-image: url(Img/Balay_Sa_Agta_2.png) ;
+    }
+  }
+
+.section-2{
+    background-image: url(Img/Bugasok_Falls_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: section-2 15s infinite ease-in-out;
+}
+
+@keyframes section-2 {
+  0%{
+      background-image: url(Img/Bugasok_Falls_3.png) ;
+    }
+    50%{
+      background-image: url(Img/Bugasok_Falls_2.png) ;
+    }
+  }
+
+.section-3{
+  background-image: url(Img/Riverstone_Castle_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: section-3 15s infinite ease-in-out;
+}
+
+@keyframes section-3 {
+  0%{
+      background-image: url(Img/Riverstone_Castle_3.png) ;
+    }
+    50%{
+      background-image: url(Img/Riverstone_Castle_2.png) ;
+    }
+  }
+
+
+.section-4{
+  background-image: url(Img/River_Trekking_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: section-4 15s infinite ease-in-out;
+}
+
+@keyframes section-4 {
+  0%{
+      background-image: url(Img/River_Trekking_1.png) ;
+    }
+    50%{
+      background-image: url(Img/River_Trekking_3.png) ;
+    }
+  }
+
+
+.discover{
+ text-decoration: none;
+ color: #fefefe;
+ font-family: Helvetica;
+ font-size: 17.5px;
+ border: 1.7px solid #fefefe;
+ border-radius: 5px;
+ padding: 10px;
+ padding-left: 20px;
+ padding-right: 20px;
+ width: 14%;
+ text-align: center;
+ margin-bottom: 10px;
+}
+
+.discover:hover::after{
+  content: "   →";
+  white-space: pre;
+  animation: transitionLeft 0.25s ease-in;
+}
+
+
+.reserve{
+ text-decoration: none;
+ color: #fefefe;
+ font-family: Helvetica;
+ font-size: 17.5px;
+ border: 1.7px solid #fefefe;
+ border-radius: 5px;
+ padding: 10px;
+ padding-left: 20px;
+ padding-right: 20px;
+ width: 14%;
+ text-align: center;
+}
+
+.reserve:hover::after{
+  content: "   →";
+  white-space: pre;
+  animation: transitionLeft 0.25s ease-in;
+
+}

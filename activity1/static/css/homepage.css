@@ -1,0 +1,547 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  z-index: 900;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 100px;
+  transition: 0.5s ease;
+  margin-top: -10px;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header.scrolled{
+  background: #fff; 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width to your desired size */
+    
+}
+
+/* header .brand{
+  color: #D95F18;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+} */
+
+header .navigation{
+  position: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+header .navigation .navigation-items a{ 
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover{
+  color: #f15b04;
+}
+
+header #home {
+  color:#f15b04;
+}
+
+header .navigation .navigation-items a:hover::before{
+width: 100%;
+}
+
+section{
+  padding: 100px 200px;
+}
+
+.home{
+  position: relative;
+  width:100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/argao1-church.jpg);
+  object-fit: cover;
+}
+.home:before{
+z-index: 777;
+content: '';
+position: absolute;
+
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.home .content{
+  z-index: 888;
+  color: #fffcfc;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+.home .content.active{
+  display:block;
+}
+.home .content h1{
+  font-size: 4em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+  color:#D95F18;
+ 
+}
+
+.home .content h1 span{
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fffffff3;
+  
+}
+.home .content p{
+  margin-bottom: 65px;
+  text-align: justify;
+  background: rgba(0, 0, 0, .3);
+
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.home .content a{
+  background: #db8e36;
+  padding: 15px 35px;
+  color: white;
+  font-size: 1.1em;                                   
+  text-decoration: none;
+  border-radius: 2px;
+}
+.home .content a:hover{
+  background: #f15b04;
+  padding: 15px 35px;
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.home .media-icons{
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition:  0.5s ease;
+}
+
+.home .media-icons a{
+color: #fff;
+font-size: 1.6em;
+transition: 0.3s ease;
+}
+.home .media-icons a:hover{
+  color: #D95F18;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+  }
+
+.home .media-icons a:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+  transform: scale(1.3);
+}
+.home video{
+  z-index: 000;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-navigation{
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+.slider-navigation .nav-btn{
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255,255,255,0.5);
+  transition: 0.3s ease;
+}
+.slider-navigation .nav-btn.active{
+  background: #f15b04;
+}
+.slider-navigation .nav-btn:not(:last-child){
+  margin-right: 20px;
+}
+.slider-navigation .nav-btn:hover{
+  transform: scale(1.2);
+}
+.video-slide{
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+.video-slide.active{
+  clip-path: circle(150.0% at 0 50%);
+  transition:  2s ease;
+  transition-property: clip-path;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #fff;
+}
+
+@media (max-width: 1040px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+  header .navigation .navigation-items a {
+    color: #222;
+    font-size: 1.2em;
+    margin: 20px;
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1, 1, 1, 0.2);
+  }
+
+  .menu-btn {
+    background: url(icon.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url(close.png) no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+
+  /* Dropdown styles for responsiveness */
+  .dropdown-content {
+    position: static;
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    width: auto;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .logo {
+    flex: 1;
+    justify-content: flex-start;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Argao History*/
+#aboutus_title {
+  margin-left: 360px;
+}
+#aboutus_title span{
+  /* text-align: center;
+  padding-left: 50px;
+  color: grey;
+  font-size: 45px; */
+  padding: 6px;
+  font-size: 35px;
+  font-weight: 500;
+  background-color: #D95F18;
+  color: white;
+  border-radius: 10px;
+}
+
+#aboutus {
+  background-image:url(../images/argao3.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  /* background-position: center center;  */
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  padding-bottom: 40px;
+  padding-top: 10px;
+  gap: 50px;
+  margin-top: -90px;
+}
+
+#aboutus h1{
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+
+#aboutus .about span{
+  margin-top: 30px;
+  display: block;
+  color: #D95F18;
+  padding: 3px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 15px;
+  font-size: 100px;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* #aboutus .about img {
+  /* margin-top: 20px;
+  margin-left: -200px;
+  /* width: 550%; 
+  z-index: -100px; 
+}*/
+
+
+#aboutus .us{
+  margin-top: 37px;
+  background-color: rgba(0, 0, 0, .6);
+  box-shadow: 0 10px 50px rgba(221, 183, 114, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+}
+#aboutus .us p{
+  color: #fff;
+  text-align: justify;
+  justify-content: space-between;
+  font-size: 14px;
+  padding-left: 200px;
+  margin-right: -180px;
+  margin-left: -250px;
+  padding: 20px;
+  margin: 5px;  
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.about{
+  width:100%;
+}
+
+.about-bg{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*Fiesta*/
+#fiesta_title {
+  margin-left: 360px;
+}
+
+#fiesta_title span{
+  /* text-align: center;
+  padding-left: 50px;
+  color: grey;
+  font-size: 45px; */
+  padding: 6px;
+  font-size: 35px;
+  font-weight: 500;
+  background-color: #D95F18;
+  color: white;
+  border-radius: 10px;
+}
+
+.fiesta-vid {
+  margin-top: -175px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.fiesta-vid video {
+  margin-top: 80px;
+  width: 60%;
+  border-radius: none;
+  margin-left: 280px;
+  border-radius: 10px;
+  padding: 30px;
+  background-image:url(../images/local.jpg);
+  background-size: cover;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+}
+/* #fiesta {
+  margin-top: 400px;
+  height: 130vh;
+} */
+
+#fiesta {
+  margin-top:155px;
+  background-image: url(../images/vin3.png);
+  background-size: cover;
+  max-height: 50vh;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .5);
+}
+
+#fiesta .us{
+  background-image: url(../images/argao1.jpg);
+  background-size: cover;
+  margin-top: 350px;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 30px;
+  border-radius: 5px;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-bottom: 30%;
+  max-width: 200%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+#fiesta .us h1 {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  max-width: 40%;
+  background-color: rgba(0, 0, 0, .6);
+  margin-left: 30%;
+}
+#fiesta .us p{
+  color: #fff;
+  /* text-align: justify;
+  justify-content: space-between;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-left: 200px;
+  margin-right: -180px;
+  margin-left: -250px; */
+  padding: 10px;
+  margin: 5px;  
+  letter-spacing: 1px;
+  text-align: justify;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 97vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .viewport-header h1 {
+    font-size: 30px;
+    margin-top: 250px;
+    font-style: 'Mission Script';
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2vw;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    animation: 
+    typing  1.5s steps(100, end) forwards;
+    overflow: hidden;
+    border-right: .20em solid orange;
+    text-align: center;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+
+  .viewport-header span {
+    display: block;
+    font-size: 60px;
+    letter-spacing: 1.3vw;
+  }
+
+.button-1 {
+    margin-top: 250px;
+    margin-left: 50px;
+    padding: 12px;
+    border: none;
+    background: orange;
+    border-radius: 4px;
+}
+
+.button-1:hover {
+    background-color: green;
+}
+
+.button-1 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

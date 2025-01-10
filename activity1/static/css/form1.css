@@ -1,0 +1,298 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  transition: 0.5s ease;
+  margin-top: -20px;
+}
+
+header.scrolled{
+  background: #fff;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.logo img {
+  width: 110px; /* Adjust the width to your desired size */
+  height: auto;
+}
+
+/* header .brand{
+  color: #D95F18;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+} */
+
+header .navigation{
+  position: relative;
+}
+
+header .navigation .navigation-items a{ 
+  position: relative;
+  color: #070707;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover{
+  color: #f15b04;
+}
+
+header #home {
+  color:#f15b04;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: transparent;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+#about-top {
+    margin-top: 130px;
+    text-align: center;
+}
+
+  #about-top img {
+    width: 350px;
+   
+}
+
+
+#about-top {
+    margin-top: 160px;
+    text-align: center;
+}
+
+  #about-top img {
+    width: 350px;
+   
+}
+
+/* #registration{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
+    box-shadow: black solid 2px;
+    transition: 0.3s;
+} */
+
+.formlogo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  margin-right: 150px;
+  margin-left: 2px;
+  margin-top: 20px;
+  width: 1300px;
+  max-height: 60%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+form label {
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+form input {
+  width: 11%;
+  height:25px;
+}
+
+form #registration {
+  padding: 0  px;
+}
+#registration .second-container{
+  display: flex;
+  padding: 0px;
+}
+#registration .second-container2{
+  padding: 0px;
+  border-bottom: 1px solid black;
+}
+form #registration .first-container {
+  display: relative;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  gap: 15px;
+  width: 30%;
+}
+form #registration .first-containers {
+  display: relative;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-bottom:1px solid #070707;
+  border-top : 1px solid #070707;
+  border-right: 1px solid #070707;
+  gap: 15px;
+  width: 30%;
+}
+form #registration .first-containerss {
+  display: relative;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-bottom:1px solid #070707;
+  border-top : 1px solid #070707;
+  gap: 15px;
+  width: 30%;
+}
+form #registration .first-containers-guest {
+  display: relative;
+  flex-wrap: wrap;
+  /* padding: 20px; */
+  border-bottom:1px solid #070707;
+  border-top : 1px solid #070707;
+  /* gap: 15px; */
+  width: 80%;
+}
+/* form #registration .first-container .first {
+  width: 100%;
+  margin-bottom: 15px;
+} */
+.shbo{
+  /* border: 0px #070707; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.boxsize{
+  width: 100%;
+}
+.boxsize2{
+  width: 90.42%;
+  border: 0px;
+}
+.boxsize3{
+  width: 40%;
+  border: 0px;
+}
+.boxsize4{
+  width: 83.5%;
+  border: 0px;
+}
+.boxsize5{
+  width: 39.5%;
+  border: 0px;
+}
+.boxsize6{
+  width: 38.3%;
+  border: 0px;
+}
+.boxsizeVehi{
+  width: 85.5%;
+  border: 0px;
+}
+.boxsizePay{
+  width: 15.5%;
+  border: 0px;
+}
+.third-container{
+  display: absolute;
+}
+form #registration h1{
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+form #registration .second-container {
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  padding: 0px;
+}
+
+form #registration .second-container .secondd {
+  margin-bottom: 10px;
+  width:1000px;
+}
+form #registration .second-container .second {
+  margin-top: 15px; 
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+ 
+}
+
+form #registration .second-container .second .seconds {
+  margin-top: 15px; 
+  display: block;
+  margin-bottom: 10px;
+}
+
+form #registration .second-container .second .second-second {
+  margin-top: 15px; 
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+form #registration .second-container .second .second-third {
+  margin-top: 15px; 
+  display: flex;
+  margin-bottom: 10px;
+}
+
+form .btn {
+  border: none;
+  margin-left: 40%;
+  margin-top: 20px;
+  padding: 15px;
+  width: 200px;
+  background-color: rgb(230, 180, 82);
+  color: white;
+  font-size: 15px;
+}
+
+
+form .btn:hover {
+  background-color: green;
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+:root{
+  --orange: #D9933D;
+  --white: #fff;
+  --green: rgb(0, 200, 0);
+  --blue: rgb(59, 59, 232);
+}
+
+.sport-form{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sport-form > .logo-container{
+  width: 20%;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sport-form > .logo-container img{
+  width: 100%;
+}
+
+.sport-form > form{
+  border: 1px solid #000;
+  padding: 30px;
+  width: 80%;
+  box-shadow: 1px 3px 8px; 
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.sports-form > form > .class{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--orange);
+}
+
+.sport-form-container label{
+  font-size: 13px;
+}
+
+.sport-form-container > h1{
+  text-align: center; 
+  font-size: 25px;
+  color: var(--blue)
+}
+
+.sport-form-container > h4{
+  color: var(--blue);
+}
+
+.sport-form-container > hr{
+  margin: 20px 0;
+  height: 2px;
+  background-color: #000;
+}
+.sport-form-container input[type="text"], .sport-form-container input[type="email"], .sport-form-container input[type="number"]{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.id-number > :first-child{
+  display: inline-block;
+  width: 12.6%;
+
+}
+
+.id-number > input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.first-row{
+  display: flex;
+}
+
+.first-column, .second-column, .third-column{
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-column, .second-column, .third-column{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.first-column > div, .second-column > div, .third-column > div{
+  display: flex;
+}
+
+.first-column > div > label, .second-column > div > label, .third-column > div > label{
+  display: inline-block;
+  width: 50%;
+}
+
+/* .first-column > div > input, .second-column > div > input, .third-column > div > input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+} */
+.address{
+  display: flex;
+}
+
+.address > input{
+  width: 79.7%;
+  margin-left: 94px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.second-row{
+  display: flex;
+}
+
+.second-row > :first-child{
+  margin-right: 66px;
+}
+
+.second-row > :last-child{
+  width: 57%;
+}
+
+.second-row > input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000;
+}
+
+.third-row > :first-child{
+  margin-right: 20px;
+}
+
+.fourth-row{
+  display: flex;
+}
+
+.fourth-row :first-child{
+  margin-right: 20px;
+}
+
+.fifth-row{
+  display: flex;
+}
+
+.fifth-row > :first-child{
+  margin-right: 20px;
+}
+
+.sixth-row > :last-child{
+ width: 90%;
+}
+
+.seventh-row > :last-child{
+  width: 53%;
+}
+
+.seventeen-row{
+  display: flex;
+}
+
+.eighth-row{
+  display: flex;
+}
+
+.eighth-row > :last-child{
+  width: 80%;
+}
+
+.tenth-row{
+  display: flex;
+}
+
+.tenth-row > :last-child{
+  width: 90%;
+}
+
+.eleventh-row{
+  display: flex;
+}
+
+.eleventh-row > :last-child{
+  width: 50%;
+}
+.twelve-row{
+  display: flex;
+}
+
+.twelve-row > :last-child{
+  width: 80%;
+}
+
+.fourteen-row{
+  display: flex;
+}
+
+.fourteen-row > :last-child{
+  width: 80%;
+  color: red;
+}
+
+.fifthteen-row{
+  display:flex;
+}
+
+.fifthteen-row > :last-child{
+  width: 50%;
+}
+
+.seventeen-row .column label{
+  display: inline-block;
+  width: 80%;
+}
+
+.last-row{
+  display: flex;
+}
+
+.last-row > :last-child{
+  width: 80%;
+}
+
+.sport-form-container > .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sport-form-container .btn-submit{
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 12px 18px;
+  outline: none;
+  border: none;
+  margin: 20px;
+}
+
+
+
+

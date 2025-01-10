@@ -1,0 +1,130 @@
+:root{
+    --orange: #d95a0fc7;
+    --white: #fff;
+    --green: rgb(0, 200, 0);
+}
+
+.hero{
+    display: flex;
+}
+
+.hero > .hero-image{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.hero > .hero-image > img{
+    width: 100%;
+}
+
+.hero > .hero-image > .edmodo-image{
+    transform: scaleX(-1);
+}
+
+/* .hero > .hero-image > .jka-image{
+    transform: scaleX(-1);
+} */
+
+.hero > .edmodo{
+    width: 150%;
+    padding: 40px 0;
+}
+
+.hero > .edmodo > img{
+    width: 100%;
+}
+
+.hero > .jka{
+    width: 80%;
+    padding: 40px 0;
+}
+
+.hero > .jka > img{
+    width: 100%;
+}
+
+.hero > .hero-text{
+    margin-left: 70px;
+    margin-top: 190px;
+}
+
+.hero > .hero-text > h1{
+    color: var(--orange);
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.hero > .hero-text > p{
+    color: rgba(0, 0, 0, .8);
+    letter-spacing: 1px;
+    font-size: 20px;    
+}
+
+.hero > .hero-text button{
+    padding: 15px 30px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    margin: 30px 0;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.video-container > video{
+    width: 90%;
+}
+
+.about-container{
+    padding: 65px;
+}
+.about-container > h1{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+.about-container  > .about{
+    display: flex;
+}
+
+.about-container > .about > .about-text {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.about-container > .about > .about-text > h1{
+    margin-bottom: 25px;
+    color: var(--orange);
+}
+
+.about-container > .about > .about-text > p{
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: justify; 
+}
+
+.about-container > .about > .about-text > ul li{
+    margin-left: 20px;
+    color: var(--green);
+    font-size: 17px;
+}
+
+.about-container > .about > .about-text > ul li:hover{
+    cursor: pointer;
+}
+
+.about-container > .about > .about-text > .coach{
+    font-size: 25px;
+}
+.about-container > .about > .about-image{
+    width: 50%;
+}
+
+.about-container > .about > .about-image img{
+    width: 100%
+}
+

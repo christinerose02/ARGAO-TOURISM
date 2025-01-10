@@ -1,0 +1,61 @@
+.vikings-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-family: poppins;
+  }
+
+  .vikings-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 5px solid #dd9531;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .vikings-form h1 {
+    font-size: 36px;
+    color: #109242;
+    font-family: Poppins;
+  }
+
+  .vikings-form h4 {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+  }
+
+  .vikings-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .vikings-form-container input[type="text"],
+  .vikings-form-container input[type="number"], .el-form-container input[type="date"] {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .vikings-form-container select{
+    width: 102%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .vikings-form-container button[type="submit"] {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .vikings-form button[type="submit"]:hover {
+    background-color: #844c64;
+  }

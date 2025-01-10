@@ -1,0 +1,240 @@
+
+.popup_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    height: 400;
+    display: flex;
+    gap: 10rem;
+    overflow: scroll;
+}
+.popup_head > .top-head{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.popup_head > .top-head > div{
+    width: 50%;
+    margin: 20px;
+
+}
+.popup_head > .top-head > .first-column > label, input{
+    display: block;
+}
+
+.popup_head > .top-head > .third-column > input[type="date"]{
+    width: 100%;
+}
+
+.top-head > div > input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.popup_head > .store-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.store-name h2{
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* display:inline-block; */
+    text-align: center;
+    /* width: 10%; */
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+.popup_head > .store-name label{
+    margin-top: -250px;
+    font-weight: bold;
+}
+
+.popup_head > .store-name > select{
+    display: inline-block;
+    width: 100%;
+
+}
+
+/* Guilangs container style */
+.guilang-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guilang-form  #close{
+    font-size: 30px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+}
+
+.guilang-form  #close:hover{
+    cursor: pointer;
+}
+.guilang-form > form{
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+    /* width: 60%; */
+    /* background-image: url( '../images/logooo.png'); */
+    background-repeat: no-repeat; 
+    overflow: hidden;
+
+}
+
+.guilang-container > label{
+    margin: 20px 0;  
+  }
+
+.guilang-container{
+    /* margin: 350px;  */
+    /* border: 1px solid black; */
+    margin-top: -200px;
+    padding: 20px;
+    width:85%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    font-weight: bolder;
+}
+.guilang-container > .first-column{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    
+}
+.guilang-container > .first-column > div{
+    width: 20%;
+    align-items: center;
+    
+}
+
+.guilang-container > .first-column .qty:last-child{
+    width: 40px;
+    
+}
+
+.guilang-container > .first-column input{
+    width: 100%;
+    
+    
+}
+
+.guilang-container > .first-column > div{
+    display: flex;
+    width: 50%;
+    margin-top: -30px;
+    justify-content: space-around;
+}
+
+.guilang-container > .first-column > div > div{
+    margin: 10px;
+    margin-left: -100;
+   
+    
+
+}
+.guilang-container > .first-column > div > div:first-child > label{
+    display: block;
+   
+}
+
+.guilang-container > .first-column > div > div:first-child > select{
+    width: 150px;
+    
+   
+}
+.guilang{
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0);
+    z-index : 999;
+    transition: 300ms ease-in-out;
+}
+
+.guilang.active{
+    transform: translate(-50%, -50%)scale(1);
+}
+
+
+.opacity.active{
+    opacity: 1;
+}
+
+.button1{
+    font-weight: bold;
+    width:110%;
+    margin-left:-25px;
+    padding: 15px;
+    border-color: orangered;
+    background: darkgreen;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 4px;
+
+  }
+
+    
+
+/* #guilang-container{
+    display: none;
+} */
+
+/* Jessie's torta */
+/* .jessies-torta{
+    margin: 20px;
+}
+.jessies-torta > .torta, .jessies-torta > .cookies{
+    display: flex;
+}
+
+.jessies-torta > .torta > div, .jessies-torta > .cookies > div {
+    margin:10px;
+}
+
+.jessies-torta > .torta{
+    margin: 20px 0;
+}
+
+#jessies-torta{
+    display: none;
+} */
+
+/* ojs torta style */
+
+/* .ojs-torta > div > .torta > div, .ojs-torta > div > .snacks, .ojs-torta > div > .torta > div{
+    display: flex;
+} 
+
+.ojs-torta > div > .torta > div > div, .ojs-torta > div > .torta > div{
+    margin: 0 20px;
+}
+
+.ojs-torta > div > .snacks > div{
+    margin: 20px;
+}
+
+.ojs-torta > div > .torta input{
+    margin-bottom: 5px;
+} */
+
+
+
+
+

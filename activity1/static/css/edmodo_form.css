@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+:root{
+    --orange: #D9933D;
+    --white: #fff;
+    --green: rgb(0, 200, 0);
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jka-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: center; */
+    /* align-content: center; */
+    /* border: 2px solid var(--orange); */
+    /* box-sizing: border-box; */
+    /* position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: 30px;
+    width: 60%;
+}
+.jka-form > .member{
+    display: flex;
+}
+
+.jka-form .logo-container{
+    width: 15%;
+}
+
+.jka-form .logo-container img{
+    width: 100%;
+}
+
+.jka-form label{
+    display: block;
+}
+
+.jka-form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, .6);
+    /* background-image: linear-gradient(120deg, var(--orange), var(--green), var(--orange)); */  
+}
+
+.jka-form-container h4{
+    margin-top: 20px;
+}
+
+
+.jka-form-container > form > .edmodo-submit{
+    display: block;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.jka-form-container{
+    position: relative;
+}
+
+.jka-form-container > form h1{
+    color: var(--green);
+}
+
+.jka-form-container > form > .back{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--orange);
+}
+
+
+.jka-form-container > form .member > div > h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.jka-form-container > input[type="text"]{
+    width: 99%;
+}
+
+.jka-form-container > p{
+    display: inline-block;
+}
+
+.jka-form-container .question{
+    display: flex;
+}
+
+.jka-form-container hr{
+    margin: 10px 0;
+}
+
+.jka-form-container .row > div{
+    margin-right: 5px;
+}
+
+.jka-form-container .container{
+    margin-bottom: 50px;
+}
+.jka-form-container .container > .row{
+    display: flex;
+}
+
+.jka-form-container .container > .fourth-row > div, .fifth-row > div, .sixth-row > div, .nineth-row > div, .tenth-row > div, .eleventh-row > div{
+    width: 50%;
+}
+
+.jka-form-container .container > .fourth-row  input, .fifth-row  input,.six-row  input, .nineth-row input, .tenth-row input, .eleventh-row input  {
+    width: 100%;
+}
+
+.jka-form-container .container > .second-row > div .gender{
+    display: flex;
+}
+
+
+.jka-form-container .container > .second-row{
+    justify-content: space-between;
+}
+
+
+.jka-form-container .container > .second-row > div .gender{
+    margin-right: 55px;
+}
+
+.jka-form-container .container > .second-row > div .gender > label{
+    margin: 0 10px;
+}
+
+.jka-form-container .container > .first-row > label{
+    display: inline-block;
+}
+
+.jka-form-container .row > div > input[type="text"]{
+    width: 100%;
+}
+
+.jka-form-container .inline > p{
+    font-size: 13px;    
+    display: inline-block;
+}
+
+.jka-form-container .inline > input[type="text"]{
+    width: 41%;
+}
+
+
+.jka-form-container .question > p, label{
+    margin-right: 5px;
+    font-size: 13px;    
+}
+
+.question .no{
+    margin-left: 5px;
+}
+
+

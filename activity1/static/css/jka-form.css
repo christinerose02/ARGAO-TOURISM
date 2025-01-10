@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+}
+
+:root{
+    --orange: #D9933D;
+    --white: #fff;
+    --green: rgb(0, 200, 0);
+}
+
+.jka-form{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* justify-items: center; */
+    /* align-content: center; */
+    /* border: 2px solid var(--orange); */
+    /* box-sizing: border-box; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.jka-form > .member{
+    display: flex;
+}
+
+.jka-form .logo-container{
+    width: 15%;
+}
+
+.jka-form .logo-container img{
+    width: 100%;
+}
+
+.jka-form label{
+    display: block;
+}
+
+.jka-form-container{
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--orange);
+    box-shadow: 10px 15px 15px;
+    /* background-image: linear-gradient(120deg, var(--orange), var(--green), var(--orange)); */
+    
+}
+
+.jka-form-container > form > .jka-submit{
+    display: block;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px;
+    outline: none;
+    border: none;
+    margin: 5px;
+}
+.jka-form-container > form > .back{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--orange);
+}
+
+.jka-form-container > form .member > div > h1{
+    text-align: center;
+    font-size: 25px;
+}
+
+.jka-form-container > input[type="text"]{
+    width: 99%;
+}
+
+.jka-form-container > p{
+    display: inline-block;
+}
+
+.jka-form-container .question{
+    display: flex;
+}
+
+.jka-form-container .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jka-form-container hr{
+    margin: 10px 0;
+}
+
+.jka-form-container .row > div{
+    margin-right: 5px;
+}
+
+.jka-form-container .row > div > input[type="text"]{
+    width: 100%;
+}
+
+.jka-form-container .inline > p{
+    font-size: 13px;    
+    display: inline-block;
+}
+
+.jka-form-container .inline > input[type="text"]{
+    width: 41%;
+}
+
+
+.jka-form-container .question > p, label{
+    margin-right: 5px;
+    font-size: 13px;    
+}
+
+.question .no{
+    margin-left: 5px;
+}

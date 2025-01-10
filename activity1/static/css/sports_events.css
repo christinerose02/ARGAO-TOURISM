@@ -1,0 +1,340 @@
+/* @font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Black.ttf);
+} */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --orange: #d95a0fc7;
+    --white: #fff;
+    --green: rgb(0, 200, 0);
+}
+.video-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9;
+}
+.video-container{
+    width: 100%;
+}
+
+.video-container video{
+    /* z-index: 000; */
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#home > .hero  button{
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    margin: 5px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+#home > .hero  button:hover{
+    cursor: pointer;
+}
+
+
+.hero{
+    width: 50%;
+    position: absolute;
+    color: var(--white);
+    z-index: 10;
+}
+.hero .fa-solid{
+    margin: 0 10px;
+    color: var(--orange);
+}
+
+.hero .click{
+    margin: 15px 5px;
+}
+
+.hero > h1{
+    font-size: 40px;
+    color: var(--orange);
+}
+
+.hero > h3,.hero > h1, .hero > p{
+    margin: 5px;
+}
+
+.hero > p{
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.details{
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 300px;
+    padding-top: 150px;
+    position: relative;
+}
+
+.details > h1{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.details > .jka, .details > .sports{
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .6);
+    border-radius: 5px;
+}
+
+.details > .container{
+    margin: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.details > .container  button {
+    padding: 15px 30px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.details > .container  button:hover{
+    cursor: pointer;
+}
+
+.details > .container > .jka-details p, .details > .container > .sport-details p{
+    text-align: justify;
+    padding: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.details > .container > div > h1{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.details > .container .image{
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.details > .container .image > img{
+    width: 100%;
+    height: 100%;
+    transition: .3s ease-in-out;
+    object-fit: cover;
+}
+
+.details > .container .image > img:hover{
+    transform: scale(1.05);
+}
+
+.details > .jka > .jka-image{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.details > .jka > .jka-image img{
+    width: 100%;
+}
+
+.details > .sports > .sports-image {
+    width: 100%;
+    /* margin: 5px; */
+}
+
+.details > .sports > .sports-image img{
+    width: 100%;
+}
+
+/* .details > .container > .images{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.details > .container > .images > div{
+    width: 100%;
+    /* background-color: red; */
+    padding: 20px;
+    /* margin: 20px; */
+    text-align: center;
+}
+
+.details > .container > .images > div img{
+    width: 100%;
+}
+
+.details > .container > .video{
+    width: 100%;
+    /* background-color: red; */
+    padding: 20px;
+}
+
+.details > .container > .video video{
+    width: 100%;
+}
+
+.details > .container > a{
+    margin: 20px;
+}
+
+#coach{
+    /* width: 90%; */
+    margin-top: -150px !important;
+}
+
+.coach{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 10%; */
+}
+
+.coach > .coach-container{
+    /* border: 2px solid red; */
+    margin: 20px;
+    transition: .5s ease-in-out;
+}
+
+.coach > .coach-container:hover{
+    transform: scale(1.1);
+}
+#coach > h1{
+    text-align: center;
+    font-size: 40px;;
+}
+
+.coach > .coach-container > h3{
+    text-align: center;
+}
+
+.coach > .coach-container{
+    padding: 10px;
+    overflow: hidden; 
+}
+.coach > .coach-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .6);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.popup{
+    width: 50%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%)scale(0);
+    transition: 200ms ease-in-out;
+    z-index: 999; 
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, .6);
+}
+
+.ruvelyn.active{  
+    transform: translate(-50%, -50%)scale(1);
+}
+.jimwell.active{  
+    transform: translate(-50%, -50%)scale(1);
+}
+.emmanuel.active{  
+    transform: translate(-50%, -50%)scale(1);
+}
+
+.popup > button{
+    color: #000;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.popup > button:hover{
+    cursor: pointer;   
+}
+
+.popup > .coach-image{
+    width: 30%;
+    padding: 20px;
+}
+
+.popup > .coach-image > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.popup >  .coach-description > h2, h4{
+    text-align: center;
+}
+
+.popup >  .coach-description > p{
+    font-size: 15px;
+}
+
+.popup > .coach-description > ul > li{
+    margin-left: 10px;
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.opacity.active{
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+
+
+
